@@ -40,19 +40,19 @@ sed -i 's/"1gb-pages": *false,/"1gb-pages": true,/' $HOME/wower/build/config.jso
 
 2. 矿池选择：[https://miningpoolstats.stream/monero](https://miningpoolstats.stream/monero)
 请根据自己需求合理选择矿池和端口：
-* pool.minexmr.com:4444
-* pool.supportxmr.com:3333
-* xmr-us-east1.nanopool.org:14444
+    * pool.minexmr.com:4444
+    * pool.supportxmr.com:3333
+    * xmr-us-east1.nanopool.org:14444
 
 3. 推荐把系统用网络重装成Debian 11。
 4. 挖矿后，要等一段时间才能在矿池网站查询到。
 5. 欢迎分享一些配置优化。
-6.限制cpu占用50%，可以搭配宝塔定时任务夜晚闲时挖矿。
+6. 限制cpu占用50%，可以搭配宝塔定时任务夜晚闲时挖矿。
 ```
 sudo apt-get install -y cpulimit
 sudo cpulimit -e xmrig -l 50 -b
 ```
-7.卸载wower
+7. 卸载wower
 ```
 systemctl stop wower && systemctl disable wower && rm -rf $HOME/wower/
 ```
