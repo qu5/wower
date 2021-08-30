@@ -43,6 +43,7 @@ sed -i 's/"1gb-pages": *false,/"1gb-pages": true,/' $HOME/wower/build/config.jso
     * pool.minexmr.com:4444
     * pool.supportxmr.com:3333
     * xmr-us-east1.nanopool.org:14444
+    * mine.c3pool.com:15555
 
 3. 推荐把系统用网络重装成Debian 11。
 4. 挖矿后，要等一段时间才能在矿池网站查询到。
