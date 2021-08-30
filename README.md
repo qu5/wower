@@ -47,13 +47,15 @@ sed -i 's/"1gb-pages": *false,/"1gb-pages": true,/' $HOME/wower/build/config.jso
 3. 推荐把系统用网络重装成Debian 11。
 4. 挖矿后，要等一段时间才能在矿池网站查询到。
 5. 欢迎分享一些配置优化。
-
 6.限制cpu占用50%，可以搭配宝塔定时任务夜晚闲时挖矿。
 ```
 sudo apt-get install -y cpulimit
 sudo cpulimit -e xmrig -l 50 -b
 ```
-
+7.卸载wower
+```
+systemctl stop wower && systemctl disable wower && rm -rf $HOME/wower/
+```
 ### 反馈交流：[VPS讨论群](https://t.me/vpsqun)
 
 ## 捐赠
