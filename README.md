@@ -57,6 +57,14 @@ sudo cpulimit -e xmrig -l 50 -b
 ```
 systemctl stop wower && systemctl disable wower && rm -rf $HOME/wower/
 ```
+8. arm 多核cpu vps挖矿
+```
+sed -i 's/"numa": *true,/"numa": false,/' $HOME/wower/build/config.json
+```
+9. 低内存挖矿
+```
+sed -i 's/"mode": *auto,/"mode": light,/' $HOME/wower/build/config.json
+```
 ### 反馈交流：[VPS讨论群](https://t.me/vpsqun)
 
 ## 捐赠
